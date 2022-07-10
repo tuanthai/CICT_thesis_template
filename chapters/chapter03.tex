@@ -1,0 +1,84 @@
+\documentclass[../the.tex]{subfiles}
+
+
+\begin{document}
+
+\section{Phân vùng ngữ nghĩa và ứng dụng tách phông:}
+\label{c3_main}
+
+\subsection{Sơ đồ chức năng ứng dụng:}
+\label{app_sche}
+{\fontsize{13}{12} \selectfont
+Ứng dụng xây dựng trên bộ công cụ lập trình giao diện Tkinter của Python được sử dụng trong bài báo cáo để làm bộ phận hiển thị cho người dùng và kết hợp với các tính năng phân vùng ảnh ngữ nghĩa của hệ thống, đồng thời ghép ảnh nền vào ảnh đã tách phông, tạo ra những hình ảnh thú vị.}
+\bigskip
+\bigskip
+
+{\fontsize{13}{12} \selectfont
+	Ta có công thức tính hàm mất mát trên toàn bộ dữ liệu như sau:
+	\bigskip
+	
+	\begin{equation} \label{eq7}
+		J(W;X,Y) = - \sum_{i=1}^{N} \sum_{j=1}^{C} y_{ji} \log (a_{ji})
+	\end{equation}
+	\bigskip
+	
+	với hàm Softmax: 
+	\begin{equation} \label{eq7.2}
+		a_{ji} = \frac{e^{W_j^{T} x_i}}{\sum_{k=1}^{C} e^{W_k^T x_i}}
+	\end{equation}
+	\bigskip
+}
+
+\begin{table}[!h]
+	\centering
+	\begin{tabular}{|p{3cm}|p{2cm}|p{2cm}|p{2cm}|p{4cm}|}
+		\hline
+		\multicolumn{1}{|l|}{
+			\textbf{Tập dữ liệu}} 
+		& \multicolumn{1}{c|}{\textbf{Chủ đề}} 
+		& \multicolumn{1}{c|}{\textbf{Số lượng}}
+		& \multicolumn{1}{c|}{\textbf{Năm ra đời}} 
+		& \multicolumn{1}{c|}{\textbf{Mô tả}} \\ 
+		\hline
+		
+		\textit{Pascal Voc 2012} 
+		& Chung 
+		& 17125 
+		& 2012 
+		& Tập dữ liệu chứa nhiều đối tượng như máy bay, người, xe, tàu lửa, động vật,... \\
+		\hline
+		
+		\textit{Unite the People (UP-S31)} 
+		& Dáng người 
+		& 8515 
+		& 2017 
+		& Hình ảnh toàn thân con người khi di chuyển. \\
+		\hline
+		
+		\textit{Part Labels (Labeled Faces in the Wild - LFW)} 
+		& Chân dung người 
+		& 2927 
+		& 2013 
+		& Gán nhãn mặt, đầu và phông nền. \\
+		\hline
+		
+		\textit{Face/Headseg (FH)} 
+		& Chân dung người 
+		& 75 
+		& 2018 
+		& Tập dữ liệu được trích từ 19002 ảnh gán nhãn mặt, mũi, tóc, tai, mắt, lông mày và phông nền. \\
+		\hline
+		
+		\textit{SVCNTT-2019} 
+		& Chân dung người 
+		& 130 
+		& 2019 
+		& Tập dữ liệu được tác giả thu thập trực tiếp từ các sinh viên khoa Công nghệ thông tin và truyền thông (10 tấm/1 sinh viên). \\
+		\hline
+	\end{tabular}
+	
+	\caption{Các tập dữ liệu phổ biến cho phân vùng ngữ nghĩa ảnh}
+	\label{segman_seg_dataset}
+\end{table}
+
+\end{document}
